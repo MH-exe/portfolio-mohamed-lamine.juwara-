@@ -1,0 +1,177 @@
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    Portfolio | Mohamed-Lamine JUWARA
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    .skill-description {
+      display: none;
+    }
+    .skill-card:hover .skill-description {
+      display: block;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white font-roboto flex">
+  <!-- Sidebar -->
+  <aside class="bg-gray-800 w-64 min-h-screen p-4">
+    <h1 class="text-2xl font-bold mb-8">Menu</h1>
+    <nav>
+      <ul>
+        <li class="mb-4">
+          <a href="index.html" class="block py-2 px-4 rounded hover:bg-gray-700">À propos</a>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('veille-dropdown')">
+            Veille Technologique
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="veille-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="secondary/page_veille.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir la veille</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('projets-dropdown')">
+            Projets
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="projets-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="secondary/page_projets.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir les projets</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e5-dropdown')">
+            Epreuve E5
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e5-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="secondary/page_epreuve_e5.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E5</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e6-dropdown')">
+            Epreuve E6
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e6-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="secondary/page_epreuve_e6.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E6</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <a href="secondary/page_contact.html" class="block py-2 px-4 rounded hover:bg-gray-700">Me contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8 overflow-auto">
+    <header class="bg-gray-800 p-4 mb-8 rounded">
+      <h1 class="text-3xl font-bold">Portfolio | Mohamed-Lamine JUWARA</h1>
+    </header>
+
+    <section class="text-center py-20 bg-gray-700" id="hero">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-4">Brevet de Technicien Supérieur</h2>
+        <h2 class="text-4xl font-bold mb-4">Solutions d'Infrastructure, Systèmes et Réseaux</h2>
+        <p class="text-xl mb-8">Formé à la gestion des infrastructures réseaux et à la sécurisation des systèmes informatiques,</p>
+        <p class="text-xl mb-8"> je poursuis mon BTS SIO option SISR avec l’objectif de devenir administrateur systèmes et réseaux.</p>
+      </div>
+    </section>
+
+    <section class="py-20" id="about">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:pl-10 mt-10 md:mt-0">
+          <h3 class="text-3xl font-bold mb-4">À propos de moi</h3>
+          <p class="text-lg mb-4">Curieux de nature, j’ai toujours soif de découverte, que ce soit dans le sport, le numérique ou la technologie. J’adore comprendre comment les choses fonctionnent, tester, apprendre et repousser mes limites.</p>
+          <p class="text-lg mb-4">À 20 ans, je ne me contente pas d’observer : j’expérimente, j’explore et je transforme chaque nouvelle connaissance en opportunité d’évolution.</p>
+          <p class="text-lg">Mon énergie et ma passion me poussent à aller plus loin, à sortir de ma zone de confort et à m’investir pleinement dans tout ce que j’entreprends. Pour moi, chaque défi est une chance d’apprendre, de grandir et de m’épanouir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-700" id="skills">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-10">Compétences</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg skill-card">
+            <div class="flex items-center justify-center space-x-2">
+              <i class="fas fa-network-wired text-4xl mb-4 text-black"></i>
+              <i class="fas fa-chevron-down text-black text-xl"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-2">Gestion des Infrastructures systèmes et réseaux</h4>
+            <ul class="skill-description">
+              <li><b>Installation, configuration et maintenance de serveurs</b></li>
+              <li><b>Maîtrise des systèmes d'exploitation serveur (Windows Server, Linux, etc.)</b></li>
+              <li><b>Gestion des services réseau (DHCP, DNS, etc.)</b></li>
+              <li><b>Mise en place de la sécurité</b></li>
+              <li><b>Virtualisation</b></li>
+              <li><b>Conception et déploiement d'infrastructures réseaux</b></li>
+              <li><b>Gestion des équipements réseau (switch, routeur, firewall)</b></li>
+              <li><b>Configuration des VLAN, gestion des protocoles réseau (TCP/IP, DNS, DHCP, etc.)</b></li>
+              <li><b>Sécurité des réseaux</b></li>
+              <li><b>Conception et gestion de bases de données</b></li>
+              <li><b>Sauvegarde et récupération des données</b></li>
+              <li><b>Automatisation des tâches</b></li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg skill-card">
+            <div class="flex items-center justify-center space-x-2">
+              <i class="fas fa-server text-4xl mb-4 text-black"></i>
+              <i class="fas fa-chevron-down text-black text-xl"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-2">Services Informatique</h4>
+            <ul class="skill-description">
+              <li><b>Assistance aux utilisateurs</b></li>
+              <li><b>Gestion des incidents</b></li>
+              <li><b>Planification et suivi de projet</b></li>
+              <li><b>Collaboration avec d’autres services</b></li>
+              <li><b>Veille technologique</b></li>
+              <li><b>Rédaction de rapports et documentation</b></li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg skill-card">
+            <div class="flex items-center justify-center space-x-2">
+              <i class="fas fa-shield-alt text-4xl mb-4 text-black"></i>
+              <i class="fas fa-chevron-down text-black text-xl"></i>
+            </div>
+            <h4 class="text-2xl font-bold mb-2">Développement</h4>
+            <ul class="skill-description">
+              <li><b>Langages de programmation</b></li>
+              <li><b>Développement web</b></li>
+              <li><b>Utilisation de technologies back-end (Node.js, Symfony, Laravel) pour le développement de serveurs d’applications</b></li>
+              <li><b>Applications mobiles</b></li>
+              <li><b>Environnements de développement et production</b></li>
+              <li><b>Gestion des configurations et des mises à jour</b></li>
+              <li><b>Conception et gestion de bases de données relationnelles</b></li>
+              <li><b>Gestion de version du code</b></li>
+              <li><b>Débogage et optimisation</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center mt-4">
+      <a href="../doc/Pro/CV Alternance.pdf" download class="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-white font-semibold">
+        Télécharger le document : CV
+      </a>
+    </div>
+  </main>
+
+  <script>
+    function toggleDropdown(id) {
+      const el = document.getElementById(id);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
+ </body>
+</html>

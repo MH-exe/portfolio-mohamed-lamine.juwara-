@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-900 text-white font-roboto flex">
+  <!-- Sidebar -->
+  <aside class="bg-gray-800 w-64 min-h-screen p-4">
+    <h1 class="text-2xl font-bold mb-8">Menu</h1>
+    <nav>
+      <ul>
+        <li class="mb-4">
+          <a href="../index.html" class="block py-2 px-4 rounded hover:bg-gray-700">À propos</a>
+        </li>
+        <li class="mb-4">
+          <a href="page_veille.html" class="block py-2 px-4 rounded hover:bg-gray-700">Veille Technologique</a>
+        </li>
+        <li class="mb-4">
+          <a href="page_projets.html" class="block py-2 px-4 rounded hover:bg-gray-700">Projets</a>
+        </li>
+        <li class="mb-4">
+          <a href="page_epreuve_e5.html" class="block py-2 px-4 rounded hover:bg-gray-700">Epreuve E5</a>
+        </li>
+        <li class="mb-4">
+          <a href="page_epreuve_e6.html" class="block py-2 px-4 rounded hover:bg-gray-700">Epreuve E6</a>
+        </li>
+        <li class="mb-4">
+          <a href="page_contact.html" class="block py-2 px-4 rounded hover:bg-gray-700">Me contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">Contact</h1>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Contact direct</h2>
+      <div class="flex flex-col space-y-4">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-envelope text-blue-500 text-3xl"></i>
+          <a href="mailto:example@example.com" class="text-lg hover:underline">mohamed_l.juwara@yahoo.com</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-phone-alt text-green-500 text-3xl"></i>
+          <a href="tel:+1234567890" class="text-lg hover:underline">+33 6 95 12 05 32</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i class="fab fa-linkedin text-blue-700 text-3xl"></i>
+          <a href="https://www.linkedin.com/in/mohamed-l-juwara/" target="_blank" rel="noopener noreferrer" class="text-lg hover:underline">LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form class="bg-gray-800 p-6 rounded-lg shadow-md space-y-6" action="#" method="POST">
+        <div>
+          <label for="nom" class="block mb-2 font-semibold">Nom</label>
+          <input type="text" id="nom" name="nom" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label for="prenom" class="block mb-2 font-semibold">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label for="numero" class="block mb-2 font-semibold">Numéro</label>
+          <input type="tel" id="numero" name="numero" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Envoyer</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

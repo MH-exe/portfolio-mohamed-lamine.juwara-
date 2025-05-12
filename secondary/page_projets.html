@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    .skill-description {
+      display: none;
+    }
+    .skill-card:hover .skill-description {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-roboto flex">
+  <!-- Sidebar -->
+  <aside class="bg-gray-800 w-64 min-h-screen p-4">
+    <h1 class="text-2xl font-bold mb-8">Menu</h1>
+    <nav>
+      <ul>
+        <li class="mb-4">
+          <a href="../index.html" class="block py-2 px-4 rounded hover:bg-gray-700">À propos</a>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('veille-dropdown')">
+            Veille Technologique
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="veille-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_veille.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir la veille</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('projets-dropdown')">
+            Projets
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="projets-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_projets.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir les projets</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e5-dropdown')">
+            Epreuve E5
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e5-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e5.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E5</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e6-dropdown')">
+            Epreuve E6
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e6-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e6.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E6</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <a href="page_contact.html" class="block py-2 px-4 rounded hover:bg-gray-700">Me contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8 overflow-auto">
+    <h1 class="text-3xl font-bold mb-10 text-center">Projets en Apprentissage</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img alt="Illustration développement web" class="rounded-lg mb-4 w-full h-48 object-cover" src="../image/definition-html-agence-comtogether.png"/>
+        <h4 class="text-2xl font-bold mb-2">Développement Web</h4>
+        <p class="mb-4 text-center">Création d'applications web modernes avec les dernières technologies.</p>
+        <a href="page_dev_project.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg transition hover:bg-blue-700 inline-block text-center">Choisir</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleDropdown(id) {
+      const el = document.getElementById(id);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

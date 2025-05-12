@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille Technologique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    .skill-description {
+      display: none;
+    }
+    .skill-card:hover .skill-description {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-roboto flex">
+  <!-- Sidebar -->
+  <aside class="bg-gray-800 w-64 min-h-screen p-4">
+    <h1 class="text-2xl font-bold mb-8">Menu</h1>
+    <nav>
+      <ul>
+        <li class="mb-4">
+          <a href="../index.html" class="block py-2 px-4 rounded hover:bg-gray-700">À propos</a>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('veille-dropdown')">
+            Veille Technologique
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="veille-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_veille.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir la veille</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('projets-dropdown')">
+            Projets
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="projets-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_projets.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir les projets</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e5-dropdown')">
+            Epreuve E5
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e5-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e5.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E5</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e6-dropdown')">
+            Epreuve E6
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e6-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e6.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E6</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <a href="page_contact.html" class="block py-2 px-4 rounded hover:bg-gray-700">Me contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8 overflow-auto max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">Veille Technologique</h1>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">1. Veille technologique stratégique</h2>
+      <p><strong>Définition :</strong><br/>Elle consiste à surveiller de manière continue les innovations, les technologies émergentes et les grandes tendances qui pourraient impacter un secteur d’activité à moyen ou long terme.</p>
+      <p><strong>Objectif :</strong> Anticiper les évolutions du marché, orienter les choix technologiques, et adapter la stratégie de l’entreprise.</p>
+      <p><strong>Exemples :</strong> Suivre l’évolution de l’intelligence artificielle, l’arrivée de nouveaux matériaux, ou les changements dans les standards de cybersécurité.</p>
+    </section>
+    <section class="mb-6 max-w-4xl mx-auto p-4 bg-gray-800 rounded">
+      <h2 class="text-2xl font-semibold mb-2">2. Veille technologique opérationnelle</h2>
+      <p><strong>Définition :</strong><br/>Elle s’attache à identifier des solutions concrètes, des outils, produits ou services déjà disponibles ou en phase de déploiement, utiles à court terme pour améliorer les processus internes ou la production.</p>
+      <p><strong>Objectif :</strong> Optimiser les performances, intégrer des technologies existantes, ou surveiller les pratiques des concurrents.</p>
+      <p><strong>Exemples :</strong> Comparer des logiciels de gestion, suivre les nouvelles versions de systèmes, ou observer l’équipement utilisé par les entreprises concurrentes.</p>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
+      <p>Bienvenue sur ma page de veille technologique où je partage les dernières tendances, articles, et ressources dans le domaine de l'informatique et des technologies </p>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Réalité étendue (XR)</h2>
+      <section class="mb-6">
+      <p>La réalité étendue (XR) dépasse aujourd’hui le cadre du divertissement pour s’imposer dans l’industrie, la santé et la défense. Utilisée pour la formation immersive, la maintenance prédictive ou les simulations tactiques, elle transforme les méthodes de travail et d’apprentissage. Cette veille présente des cas concrets de son déploiement dans ces secteurs stratégiques. </p>
+    </section>
+      <section class="mb-6">
+    </section>
+      <p>🏭 Industrie : Maintenance prédictive et assistance à distance<br/>
+      La réalité étendue (XR) transforme les opérations de maintenance industrielle en permettant une assistance en temps réel. Par exemple, des techniciens peuvent utiliser des lunettes intelligentes pour recevoir des instructions superposées sur leur champ de vision, guidant chaque étape de la réparation. Cette approche réduit les temps d'arrêt des équipements, améliore l'efficacité et permet une formation plus immersive et interactive, accélérant l'apprentissage et améliorant la rétention des connaissances.</p>
+      <section class="mb-6">
+    </section>
+      <p>🩺 Santé : Formation médicale immersive<br/>
+      Dans le domaine de la santé, la réalité virtuelle est utilisée pour la formation médicale. Par exemple, le programme VALOR (Virtual Advancement of Learning for Operational Readiness) de SimX offre un environnement de formation immersif simulant des défis médicaux complexes. Ce système permet aux professionnels de santé de s'entraîner à des situations critiques, améliorant ainsi leur préparation et leur capacité à fournir des soins efficaces dans des environnements opérationnels exigeants.</p>
+    </section>
+      <section class="mb-6">
+      <p>🪖 Défense : Simulations tactiques et entraînement immersif<br/>
+      Les forces armées intègrent la réalité étendue pour moderniser la formation de leur personnel. Par exemple, le Corps des Marines des États-Unis a déployé un système de formation basé sur la réalité mixte, permettant aux conducteurs de véhicules blindés de s'entraîner dans des environnements virtuels réalistes. Cette approche améliore la préparation opérationnelle tout en réduisant les coûts et les risques associés à la formation traditionnelle.</p>
+    </section>
+    <section class="mb-6">
+    <p>✅ Conclusion<br/>
+    </section>
+    <section class="mb-6">
+    La réalité étendue (XR) s’impose aujourd’hui comme un levier d’innovation majeur dans des secteurs clés tels que l’industrie, la santé et la défense. En permettant l’assistance à distance, la maintenance prédictive ou encore des formations immersives simulant des situations critiques, elle optimise les performances, réduit les risques et accélère la montée en compétences. Ces usages concrets montrent que la XR dépasse largement le cadre du jeu pour devenir un outil stratégique au service de l’efficacité opérationnelle.</p>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Articles récents</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://www.divalto.com/la-maintenance-predictive-pilier-de-lindustrie-4-0/?utm_source=chatgpt.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 1: Industrie : Maintenance prédictive et assistance à distance</a></li>
+        <li><a href="https://www.healthysimulation.com/fr/simulation-m%C3%A9dicale-militaire-simx-vr-valor-pcc-casevac/?utm_source=chatgpt.com2" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 2: Santé : Formation médicale immersive</a></li>
+        <li><a href="https://www.omglabs.pro/how-the-military-uses-xr-to-improve-training-their-staff?utm_source=chatgpt.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 3: Défense : Simulations tactiques et entraînement immersif </a></li>
+        <li><a href="https://simulateur-vr.com/xrt-acheve-le-deploiement-mondial-dun-systeme-de-formation-des-conducteurs-base-sur-la-realite-mixte-pour-le-corps-des-marines-des-etats-unis/?utm_source=chatgpt.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 3 /Part 2: Défense : Simulations tactiques et entraînement immersif </a></li>
+      </ul>
+    </section>
+    </section>
+  </main>
+  <script>
+    function toggleDropdown(id) {
+      const el = document.getElementById(id);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
